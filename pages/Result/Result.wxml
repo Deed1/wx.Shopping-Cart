@@ -1,0 +1,6 @@
+<!--pages/Result/Result.wxml-->
+<view wx:for="{{seachInfo}}" wx:key="index" class="fater">
+     <image src="{{item.photo}}" />
+     <text class="title_name">{{item.name}}</text>
+     <view class="info">{{item.body}}</view>
+</view>

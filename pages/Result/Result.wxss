@@ -1,0 +1,22 @@
+image{
+    display: block;
+    width: 90%;
+    height: 300rpx;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+    border-radius: 20rpx;
+}
+text{
+    display: block;
+    font-size: 28rpx;
+    margin:30rpx;
+}
+.info{
+    margin:30rpx;
+    color:#888;
+    font-size: 25rpx;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

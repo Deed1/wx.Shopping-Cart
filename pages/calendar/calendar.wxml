@@ -1,0 +1,6 @@
+<!--pages/calendar/calendar.wxml-->
+<view wx:for="{{courses}}" wx:key="index" class="world">
+  <text class='time'>{{item.created_at}}</text>
+  <image src='{{item.photo}}' bindtap="tapname" data-id="{{item.id}}"/>
+  <text class='name'>{{item.name}}</text>
+</view>

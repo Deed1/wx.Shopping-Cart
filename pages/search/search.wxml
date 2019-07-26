@@ -1,0 +1,15 @@
+<view class="title">
+    <image src="../../img/tc.png" bindtap="tapname" />
+    <view class="search">搜索</view>
+</view>
+
+<view class="section">
+  <input type='text' placeholder="请输入您想搜索的内容" bindconfirm="trigger"/>
+  <image src="../../img/ss.png" class="pic"/>
+</view>
+
+<view class="info">
+    <block wx:for="{{items}}" wx:key="index" >
+      <text  bindtap="jump" data-value="{{item}}">{{item}}</text>
+    </block>
+</view>

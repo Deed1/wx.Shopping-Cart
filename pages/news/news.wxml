@@ -1,0 +1,12 @@
+<!--pages/news/news.wxml-->
+<view class="title">
+    <text>新闻</text>
+    <image src="../../img/cc.png" bindtap="tapname" />
+</view>
+
+<view class="news">
+    <view wx:for="{{news}}" wx:key="index" style="border-bottom: 1px solid #999; width:95%" bindtap='jump' data-id="{{item.id}}">
+        <view class="news_title">{{item.title}}</view>
+         <view class="news_time">{{item.created_at}}</view>
+    </view>
+</view>

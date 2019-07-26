@@ -1,0 +1,132 @@
+@import '/towxml/style/main.wxss';
+@import '/towxml/style/theme/light.wxss';
+.video{
+    width: 100%;
+    height: 350rpx;
+    margin: 0;
+}
+.title{
+    width: 100%;
+    height: 100rpx;
+    background-color: white;
+    box-shadow:2px 2px 4px #999999;
+    position: relative;
+  }
+.title_pic{
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: 28rpx;
+}
+.introduce{
+    position: absolute;
+    top: 32rpx;
+    left: 100rpx;
+    font-size: 34rpx;
+    font-weight: 600;
+}
+.course{
+    width: 200rpx;
+    height: 50rpx;
+    border: 1px solid #999999;
+    border-radius: 50rpx;
+    margin-left: 20rpx;
+    position: relative;
+}
+.list{
+    font-size: 25rpx;
+    position: absolute;
+    left: 60rpx;
+    bottom: 10rpx;
+}
+.video_pic{
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    left: 28rpx;
+    bottom: 10rpx;
+    margin: 0;
+}
+.video_list{
+    width: 80%;
+    height: 100%;
+    transform: translateX(-100%);
+    -webkit-transform:translateX(-100%);
+    border-right: 1px solid #eeeef0;
+    text-align: center;
+    background: #fff;
+    position:fixed;
+    top:0;
+    left:0;
+    transition-property:all;
+    transition-duration:.5s;
+    transition-timing-function:ease;
+    transition-delay: .2s;
+}
+.list_title{
+    border: 1px solid #eeeef0;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 25rpx;
+    background: #eeeef0;
+}
+.info{
+    display: flex;
+    height: 100rpx;
+    align-items: center;
+    border-top: 1px solid #eeeef0;
+}
+.logo_pic{
+    flex: 0.2;
+}
+.logo{
+    width:50rpx;
+    height: 50rpx;
+    margin-left: 20rpx;
+}
+.list_name{
+    flex:1;
+    padding-left: 15rpx;
+    font-size: 25rpx;
+    text-align: left;
+}
+.list_time{
+    margin-right: 18rpx;
+    font-size: 28rpx;
+}
+.world{
+    transform: translateX(80%);
+    -webkit-transform:translateX(80%);
+    transition-property:all;
+    transition-duration:.5s;
+    transition-timing-function:ease;
+    transition-delay: .2s;
+}
+.mongolia{
+    position: absolute;
+    top: 0;
+    width: 375px;
+    height: 100%;
+    background:#000 ;
+    opacity: 0.4;
+    z-index: 1;
+    transition-property:all;
+    transition-duration:.5s;
+    transition-timing-function:ease;
+    transition-delay: .2s;
+}
+.word{
+    transform: translateX(0%);
+    transition-property:all;
+    transition-duration:.5s;
+    transition-timing-function:ease;
+    transition-delay: .2s; 
+}
+.nav{
+    transform: translateX(0%);
+    -webkit-transform:translateX(0%);
+    transition-property:all;
+    transition-duration:.5s;
+    transition-timing-function:ease;
+    transition-delay: .2s;
+}

@@ -1,0 +1,21 @@
+<view class="title">
+    <image src="../../img/tc.png" bindtap="tapname" />
+</view>
+
+<view class='btn'>
+  <button class='one'>ITFun会员</button>
+  <button>关于ITFun的概况</button>
+  <button>长乐未央</button>
+</view>
+
+<view class='btn_centre'>
+  <text>线下培训</text>
+  <button class='one'>培训简介</button>
+  <button>web前端培训</button>
+  <button>PHP培训</button>
+</view>
+
+<view class='btn_bottem'  >
+  <button class='one' bindtap='Quit'>安全退出</button> 
+</view>
+

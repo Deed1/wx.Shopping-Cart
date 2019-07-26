@@ -1,0 +1,185 @@
+/* pages/describe/describe.wxss */
+.title{
+    width: 100%;
+    height: 100rpx;
+    background-color: white;
+    box-shadow:2px 2px 4px #999999;
+    position: relative;
+  }
+.title_pic{
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: 28rpx;
+}
+.title_name{
+    position: absolute;
+    top: 32rpx;
+    left: 70rpx;
+    font-size: 30rpx;
+}
+.pic{
+    width: 100%;
+    text-align: center;
+}
+.photo{
+    width: 90%;
+    margin-top: 15rpx;
+    border-radius: 20rpx;
+    height: 300rpx;
+}
+.number{
+    display: block;
+    width: 150rpx;
+    font-size: 28rpx;
+    margin-left: 30rpx;
+    border-radius: 20rpx;
+    text-align: center;
+    background: #1f99b0;
+    color: #fff;
+}
+.info_name{
+    margin-left: 30rpx;
+    font-size: 40rpx;
+}
+.info_body{
+    margin: 30rpx;
+    color:#888;
+    font-size: 25rpx;
+}
+.bottom_pic{
+    display: block;
+    margin: 0 auto;
+    width: 50rpx;
+    height: 50rpx;
+}
+.active{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.curriculum{
+    margin-top: 120rpx;
+}
+.curriculum_fater{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeef0;
+    height: 150rpx;
+    /* line-height: 80rpx; */
+}
+.Triangle{
+    flex: 0.1;
+    width:0;
+    height:0;
+	border-top:20rpx solid transparent;
+    border-bottom:20rpx solid transparent;
+    border-left:20rpx solid #1f99b0;
+    margin-left: 100rpx;
+}
+.num{
+    padding-right: 50rpx;
+    font-size: 25rpx;
+}
+.curriculum_title{
+    font-size: 25rpx;
+}
+.vip{
+    background: #1f99b0;
+    width: 100rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    border-radius: 20rpx;
+    color: #fff;
+    font-size: 25rpx;
+    margin-right: 10rpx;
+}
+.vip_two{
+    background: #ee5050;
+    width: 100rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    border-radius: 20rpx;
+    color: #fff;
+    font-size: 25rpx;
+    margin-right: 10rpx;
+}
+.item{
+    font-size: 25rpx;
+}
+.curriculum_right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.curriculum_bottom{
+    display: flex;
+    margin-top: 20rpx;
+}
+.teacher{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 240rpx;
+}
+.ceo{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 150rpx;
+    margin: 0 50rpx;
+}
+.teacher_info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.introduce{
+    font-size: 25rpx;
+    margin: 10rpx;
+}
+.recommend{
+   height: 400rpx;
+   background: #eeeef0;
+   position: relative;
+}
+.recommend_info{
+    display: flex;
+    flex-direction: column;
+}
+.recommend_photo{
+    display: block;
+    width: 340rpx;
+    height: 150rpx;
+    margin: 20rpx;
+    margin-bottom: 0;
+}
+.size{
+    font-size: 30rpx;
+    width: 330rpx;
+    background: #fff;
+    text-align: left;
+    height: 150rpx;
+    padding: 10rpx;
+    padding-right: 0;
+    margin-left: 20rpx;
+}
+.relevant{
+    font-size: 25rpx;
+    position: absolute;
+    left: 25rpx;
+    top: 20rpx;
+}
+
+/* 色彩渐变 */
+.gray{
+    position: absolute;
+    top: 0;
+    width: 382px;
+    height: 51px;
+    background: linear-gradient(to top,#fff,transparent);
+    z-index: 1;
+    filter: alpha(opacity=50);
+}

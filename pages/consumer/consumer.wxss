@@ -1,0 +1,137 @@
+.swiper-tab{  
+    width: 100%;  
+    text-align: center;  
+    line-height: 80rpx;
+}  
+.swiper-tab-list{  
+    font-size: 30rpx;  
+    display: inline-block;  
+    width: 33.33%;  
+    color: #000;  
+}  
+.on{
+    color: #1f99b0;  
+    border-bottom: 2rpx solid #1f99b0;
+}  
+  
+.swiper-box{ 
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+}  
+.swiper-box view{  
+    text-align: center;  
+}  
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #1f99b0;
+    height:10%;
+}
+.pic_fater{
+  flex: 1;
+  display: inline-block;
+}
+.pic{
+    text-align: center;
+    margin:10px 10px 0 0;
+    width: 70rpx;
+    height: 70rpx;
+}
+.info_fater{
+  flex: 2;
+  display: flex;
+  flex-direction:column;
+}
+.info_one{
+    color: #fff;
+    font-size: 26rpx;
+    margin-right: 175rpx;
+}
+.info{
+    color: #fff;
+    font-size: 26rpx;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    align-items: center;
+}
+.photo_title{
+    flex: 1;
+}
+.photo{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}
+.information{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100rpx;
+}
+.one{
+    text-align: left;
+    font-size: 15px;
+}
+.two{
+    color: #FFF;
+    text-align: left;
+    font-size: 14px;
+    width: 70px;
+    background-color: #1f99b0;
+    border-radius: 4px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.head{
+    height: 30px;
+    line-height: 30px;
+    border-bottom:1px solid #eeeef0;
+    width: 95%;
+    margin-left: 20rpx; 
+}
+.head_h{
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #eeeef0;
+    border-bottom:1px solid #eeeef0;
+    width: 95%;
+    margin-left: 20rpx; 
+}
+.title{
+    position: absolute;
+    left: 20rpx;
+    opacity: 0.4;
+    font-size: 15px;
+}
+.btn{
+  width: 50%;
+  margin-top: 30rpx;
+  background-color: #1f99b0;
+  border-radius:50rpx;
+  color: #FFF;
+}
+
+.btn_title{
+    margin-top: 300rpx;
+    width: 300rpx;
+    background-color: #1f99b0;
+    color: #fff;
+    border-radius:50rpx;
+    size: 300rpx;
+}
+.describe{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+.navigator-hover {
+    background-color:#fff;
+}

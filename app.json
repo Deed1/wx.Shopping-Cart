@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/categories/categories",
+    "pages/calendar/calendar",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/consumer/consumer",
+    "pages/news/news",
+    "pages/details/details",
+    "pages/quit/quit",
+    "pages/search/search",
+    "pages/Result/Result",
+    "pages/describe/describe",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1f99b0",
+    "navigationBarTitleText": "长乐未央",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color":"#a9b7b7",
+    "selectedColor":"#1f99b0",
+    "borderStyle":"white",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"img/fx.png",
+        "selectedIconPath":"img/fx_blue.png",
+        "text":"发现"
+      },
+      {
+        "pagePath": "pages/categories/categories",
+        "iconPath": "img/fl.png",
+        "selectedIconPath": "img/fl_blue.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/calendar/calendar",
+        "iconPath": "img/rl.png",
+        "selectedIconPath": "img/rl_blue.png",
+        "text": "课程日历"
+      },
+      {
+        "pagePath": "pages/consumer/consumer",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my_blue.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

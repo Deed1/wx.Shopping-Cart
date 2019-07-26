@@ -1,0 +1,84 @@
+<view class="container"> 
+  <view class='title'>
+    <image src='../../img/ld.png' style='width:20px;height:20px' class='one' bindtap='tapname'></image>
+    <image src='../../img/f.png' style='width:20px;height:20px' class='two' bindtap='search'></image>
+    <image src='../../img/gd.png' style='width:20px;height:20px' class='three' bindtap='jump'></image>
+  </view>
+
+<view style='font-size:22px;color:#289db3;font-weight:550' class='size_one'>
+ 发现
+</view>
+<view style='font-size:18px;font-weight:700' class='size_two'>
+ 推荐
+</view>
+</view>
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+  circular="ture" style='height:300px;text-align:center;width:100%'>
+  <block wx:for="{{slide_courses}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item.photo}}" class="slide-image" bindtap='click' data-id='{{item.id}}'/>
+      <text class="created">{{item.created_at}}</text>
+      <text class='name'>{{item.name}}</text>
+      <text class="desc">{{item.desc}}</text>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="info">
+    <view class="title_info">
+      <text>课程发布日历</text>
+    </view>
+
+  <view class="section">
+    <scroll-view scroll-x>
+      <view style="display: flex;">
+        <view wx:for="{{section}}" wx:key="index">
+          <view bindtap="link" data-id="{{item.id}}">
+            <image src="{{item.photo}}" class="section-image"/>
+            <text class="section_name">{{item.name}}</text>
+            <text class="section_created">{{item.created_at}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="title-info">
+      <text>最受欢迎的课</text>
+  </view>
+
+  <view class="section_two">
+    <scroll-view scroll-x>
+      <view style="display: flex;">
+        <view wx:for="{{section_two}}" wx:key="index">
+          <view bindtap="link" data-id="{{item.id}}">
+            <image src="{{item.photo}}" class="section_image"/>
+            <text class="section-name">{{item.name}}</text>
+          </view>
+      </view>
+      </view>
+    </scroll-view>
+  </view>
+
+    
+  <view class="title-bottom">
+      <text>入门课程</text>
+  </view>
+
+  <view class="section_three">
+    <scroll-view scroll-x>
+      <view style="display: flex;">
+        <view wx:for="{{section_three}}" wx:key="index">
+          <view bindtap="link" data-id="{{item.id}}">
+            <image src="{{item.photo}}" class="section_bottom"/>
+            <text class="section-name">{{item.name}}</text>
+          </view>
+      </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

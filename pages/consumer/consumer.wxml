@@ -1,0 +1,64 @@
+
+<view wx:if="{{access_token?false:true}}">
+    <navigator url="../mine/mine">
+    <button class="btn_title">登录</button>
+    </navigator> 
+    <view class="describe">登陆后才能访问!</view>
+</view>
+
+<view wx:else="{{access_token?true:false}}">
+    <view class="swiper-tab"> 
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">我的主页</view>  
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">喜欢的课程</view>
+        <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">观看历史</view> 
+    </view>  
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+        <swiper-item>
+            <view class="header">
+             <view class='pic_fater'><image src="../../img/tx.png" class="pic" /></view>
+             <view class='info_fater'>
+                <view> <text class="info_one">所有在线课程都可免费观看!</text></view>
+                <view> <text class="info">报名线下班，每班6-10人，老学员都推荐！</text></view>
+             </view>
+           
+            </view>
+            <view class="body">
+                <view class="photo_title">
+                    <image src="{{user.photo}}"  class="photo" />
+                </view>
+                <view class="information">
+                    <text class="one">{{user.fullname}}</text>
+                    <text class="one">ID：{{user.id}}</text>
+                    <view class="two">{{user.premium?'付费会员':'免费会员'}}</view> 
+                </view>
+            </view>
+            <view class="details">
+                <view class="head_h">
+                    <text class="title">电子邮箱</text>
+                    {{user.email}}
+                </view>
+                <view class="head">
+                    <text class="title">性别</text>
+                    {{user.sex?'男':'女'}}
+                </view>
+                <view class="head">
+                    <text class="title">公司</text>
+                    {{user.company}}
+                </view>
+                <view class="head">
+                    <text class="title">介绍</text>
+                    {{user.introduce}}
+                </view>
+            </view>
+            <button class="btn" bindtap="Btn">退出登录</button>
+        </swiper-item>
+        <!-- 我是呵呵 -->
+        <swiper-item>
+            <view>功能</view>
+        </swiper-item>
+        <swiper-item>
+            <view>观看历史</view>
+        </swiper-item>
+    </swiper>
+</view>
+

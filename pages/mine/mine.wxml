@@ -1,0 +1,65 @@
+<view class="fater">
+    <view class="kid">
+        <image class="" src="../../img/jt.png" style='width:30px;height:30px'></image>
+            <view class="{{index === currentIndex ? 'active' : ''}}" wx:for="{{buttonData}}" wx:key="index" data-index="{{index}}" bindtap="change">
+                <view class="public">{{item}}</view>
+            </view>
+          
+            <view class="home" bindtap="jump">
+                首页
+            </view>   
+    </view>
+
+    <view class="kid_bottom" wx:if="{{currentIndex==0}}">
+        <form bindsubmit="formSubmit">
+            <view class="title">电子邮件</view>
+            <input type='user' placeholder="E-mail" name="name" />
+
+            <view class="title">密码 </view>
+            <input type='password' placeholder="密码" name="password"/>
+            <button class="footer" form-type="submit">
+                登录
+            </button>
+        </form>
+    </view>
+    
+    <view class='fater-register' wx:else="{{currentIndex!=0}}">
+        <form bindsubmit="formRecord" bindreset="formReset">
+            <view class="title">姓氏</view>
+            <input type='text' placeholder="请输入您的姓氏" name="first_name" />
+                
+            <view class="title_bottom">
+                *请输入您的真实姓氏
+            </view>
+
+            <view class="title">名字</view>
+            <input type='text' placeholder="请输入您的名字" name="last_name" />
+                
+            <view class="title_bottom">
+                *请输入您的真实名字
+            </view>
+
+            <view class="title">电子邮件</view>
+                <input type='user' placeholder="请输入您的E-mail" name="email"/>
+
+            <view class="title">
+                <text>密码</text>
+                <text class="right">*半角英文数字6位数以上</text>  
+            </view>
+            <input type='password' placeholder="请输入密码" name="password" />
+
+            <radio-group class="radio-group" name="sex">
+               <text>性别：</text>
+               <block  wx:for="{{items}}" wx:key="index">
+                  <label class="radio">
+                    <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+                </label>
+               </block> 
+            </radio-group>
+            <button class="footer" form-type="submit">
+                注册
+            </button>
+        </form>
+    </view>
+</view>
+

@@ -1,0 +1,22 @@
+/* pages/calendar/calendar.wxss */
+.world{
+    width: 100%;
+    text-align: center;
+    margin: 30rpx 0;
+}
+image{
+    width: 90%;
+    height: 300rpx;
+    border-radius: 20rpx;
+    margin: 10rpx;
+}
+.time{
+    display: block;
+    text-align: left;
+    margin-left: 45rpx;
+    font-size: 28rpx;
+}
+.name{
+    display: block;
+    font-size: 28rpx;
+}

@@ -1,0 +1,42 @@
+<!--pages/video/video.wxml-->
+
+<view class="{{photo?'world':'word'}}" style='overflow:hidden;height:100vh'>
+    <view class="title">
+        <image src="../../img/tc.png" bindtap="tapname" class="title_pic"/>
+        <text class="introduce">课程介绍</text>
+    </view>
+    <view class="{{photo?'mongolia':''}}" bindtap="cancel"></view>
+
+    <view class="video_title">
+        <video src="{{video.video}}" class="video"></video>
+        <view class="course"  bindtap="click">
+            <image src="../../img/list.png" class="video_pic"/>
+            <text class="list">课程列表</text>
+        </view>
+    </view>
+
+    <view class="markdown">
+        <scroll-view scroll-y style="height:{{winHeight}}px">
+            <import src="/towxml/entry.wxml"/>
+            <template is="entry" data="{{...article}}"/>
+        </scroll-view>
+    </view>
+</view>
+
+<view class="video_list {{photo?'nav':''}}">
+    <view class="list_title">{{list_name.name}}</view>
+    <view class="curriculum_list">
+        <scroll-view scroll-y style="height:{{winHeight - 31}}px">
+                <block wx:for="{{list}}" wx:key="index" >
+                    <view class="info" bindtap="jump" data-id="{{item.id}}">
+                        <view class="logo_pic">
+                            <image src="../../img/bf.png" class="logo" />
+                        </view>
+                        <text class="list_name">{{item.title}}</text>
+                        <text class="list_time">{{item.time}}</text>
+                    </view>
+                </block>
+        </scroll-view>
+    </view>
+</view>
+

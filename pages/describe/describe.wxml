@@ -1,0 +1,61 @@
+<!--pages/describe/describe.wxml-->
+<view>
+  <view class="title">
+    <image src="../../img/tc.png" bindtap="tapname" class="title_pic" />
+    <text class="title_name">{{course.name}}</text>
+  </view>
+
+  <view class="pic">
+    <image src="{{course.photo}}" class="photo" />
+    <text class="number">全{{chapters.length}}回</text>
+  </view>
+
+  <view class="info">
+    <view class="info_name">{{course.name}}</view>
+    
+    <view class="info_body {{photo?'active':''}}"  style="position: relative;">
+      {{course.body}}
+      <view class="{{photo?'gray':''}}"></view>
+    </view>
+    
+    <view><image src="{{src}}" class="bottom_pic" bindtap="change"/></view>
+  </view>
+
+  <view class="curriculum">
+    <block wx:for="{{chapters}}" wx:key="index">
+      <view class="curriculum_fater" bindtap="jump" data-publish="{{item.publish}}" data-id="{{item.id}}">
+        <view class="Triangle"></view>
+        <text class="num">{{index+1}}</text>
+        <view class="curriculum_right">
+          <text class="curriculum_title">{{item.title}}</text>
+          <view class="curriculum_bottom">
+            <text class="vip" wx:if="{{item.publish}}">{{item.free?'免费':'交钱观看'}}</text>
+            <text class="vip_two" wx:else>未发布</text>
+            <text class="item">{{item.updated_at}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="teacher">
+    <image src="{{teacher.avatar}}" class="ceo"/>
+    <view class="teacher_info">
+      <text class="introduce">{{teacher.fullname}}</text>
+      <text class="introduce">{{teacher.company}}</text>
+    </view>
+  </view>
+
+  <view class="recommend">
+   <text class='relevant'>相关课程</text>
+    <scroll-view scroll-x>
+      <view style="display: flex;width:1000rpx;margin-top:50rpx">
+        <block wx:for="{{relation_courses}}" wx:key="index">
+          <view class="recommend_info" bindtap='click' data-id='{{item.id}}'>
+            <image src="{{item.photo}}" class="recommend_photo"/>
+            <view class="size">{{item.title}}</view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>

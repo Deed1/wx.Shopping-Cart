@@ -1,0 +1,43 @@
+page{
+  background: #f1f0f6
+}
+
+.title{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  box-shadow:2px 2px 4px #999999;
+  position: relative;
+}
+image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 28rpx;
+}
+.btn{
+  margin-top: 40rpx;
+   
+}
+button{
+  color: #1f99b0;
+  border-radius:0;
+  background-color: #fff;
+  border-bottom: 1px solid #eeeef0;
+}
+.one{
+  border-top: 1px solid #eeeef0;
+}
+.btn_centre{
+ margin-top: 50rpx;
+}
+text{
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+.btn_bottem{
+  margin-top: 50rpx;
+}
+button::after { 
+  border: none; 
+}
